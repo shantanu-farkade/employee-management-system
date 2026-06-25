@@ -55,8 +55,8 @@ function updateDashboardStats(employees) {
             ? "₹" + Math.round(totalSalary / employees.length)
             : "₹0";
 
-    document.getElementById("maxSalary").innerText =
-        "₹" + maxSalary;
+    document.getElementById("maxSalaryDisplay").innerText =
+    "₹" + maxSalary;
 }
 
 /* ===========================
