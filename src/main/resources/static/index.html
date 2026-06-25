@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- ================= HEADER ================= -->
+
+        <header>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+
+            <h1>
+                <i class="fa-solid fa-users"></i>
+                Employee Management System
+            </h1>
+
+        
+
+           
+        </header>
+         
+         <div class="stats-container">
+
+            <div class="stat-card">
+                <h3>Total Employees</h3>
+                <h1 id="totalEmployees">0</h1>
+            </div>
+        
+            <div class="stat-card">
+                <h3>Departments</h3>
+                <h1 id="totalDepartments">0</h1>
+            </div>
+        
+            <div class="stat-card">
+                <h3>Average Salary</h3>
+                <h1 id="avgSalary">0</h1>
+            </div>
+        
+            <div class="stat-card">
+                <h3>Highest Salary</h3>
+                <h1 id="maxSalaryDisplay">0</h1>
+            </div>
+        
+        </div>
+
+        <!-- ================= ADD / UPDATE ================= -->
+
+        <div class="card">
+
+            <h2>Add / Update Employee</h2>
+
+            <div class="form-grid">
+
+                <input type="hidden" id="id">
+
+                <input type="text"
+                    id="name"
+                    placeholder="Enter Name">
+
+                <input type="email"
+                    id="email"
+                    placeholder="Enter Email">
+
+                <input type="text"
+                    id="phone"
+                    placeholder="Enter Phone Number">
+
+                <input type="text"
+                    id="department"
+                    placeholder="Department">
+
+                <input type="text"
+                    id="designation"
+                    placeholder="Designation">
+
+                <input type="number"
+                    id="salary"
+                    placeholder="Salary">
+
+            </div>
+
+            <div class="btn-group">
+
+                <button class="btn btn-primary"
+                    onclick="addEmployee()">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add Employee
+
+                </button>
+
+                <button class="btn btn-success"
+                    onclick="updateEmployee()">
+
+                    <i class="fa-solid fa-pen"></i>
+
+                    Update Employee
+
+                </button>
+
+                <button class="btn btn-danger"
+                    onclick="clearForm()">
+
+                    <i class="fa-solid fa-trash"></i>
+
+                    Clear
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= SEARCH ================= -->
+
+        <div class="card">
+
+            <h2>Search Employees</h2>
+
+            <div class="search-grid">
+
+                <input type="text"
+                    id="searchName"
+                    placeholder="Search By Name">
+
+                <button class="btn btn-primary"
+                    onclick="searchByName()">
+
+                    Search Name
+
+                </button>
+
+                <input type="text"
+                    id="searchDepartment"
+                    placeholder="Search By Department">
+
+                <button class="btn btn-success"
+                    onclick="searchByDepartment()">
+
+                    Search Department
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= SALARY FILTER ================= -->
+
+        <div class="card">
+
+            <h2>Salary Filter</h2>
+
+            <div class="salary-grid">
+
+                <input type="number"
+                    id="minSalary"
+                    placeholder="Minimum Salary">
+
+                <input type="number"
+                    id="maxSalary"
+                    placeholder="Maximum Salary">
+
+                <button class="btn btn-primary"
+                    onclick="filterSalary()">
+
+                    Filter
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= PAGINATION ================= -->
+
+        <div class="card">
+
+            <h2>Pagination & Sorting</h2>
+
+            <div class="pagination-grid">
+
+                <input type="number"
+                    id="page"
+                    placeholder="Page Number"
+                    value="0">
+
+                <input type="number"
+                    id="size"
+                    placeholder="Page Size"
+                    value="5">
+
+                <select id="sortBy">
+
+                    <option value="id">
+                        ID
+                    </option>
+
+                    <option value="name">
+                        Name
+                    </option>
+
+                    <option value="salary">
+                        Salary
+                    </option>
+
+                    <option value="department">
+                        Department
+                    </option>
+
+                </select>
+
+                <button class="btn btn-success"
+                    onclick="loadEmployees()">
+
+                    Load Employees
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- ================= TABLE ================= -->
+
+        <div class="table-card">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>Phone</th>
+
+                        <th>Department</th>
+
+                        <th>Designation</th>
+
+                        <th>Salary</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="employeeTable">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
