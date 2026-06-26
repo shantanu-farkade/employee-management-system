@@ -1,33 +1,47 @@
 # Employee Management System
 
-A Full-Stack Employee Management System built using Spring Boot, MySQL, HTML, CSS, and JavaScript.
+A full-stack Employee Management System built using **Java, Spring Boot, MySQL, HTML, CSS, and JavaScript**. The application allows administrators to securely manage employee records through a responsive web interface.
 
-## Features
+## 🌐 Live Demo
 
-* Employee Login System
+**Application:**
+https://employee-management-system-production-dabb.up.railway.app
+
+### Demo Credentials
+
+**Username:** `admin`
+**Password:** `admin123`
+
+---
+
+## ✨ Features
+
+* Secure Login System
 * Add Employee
 * Update Employee
 * Delete Employee
-* View All Employees
-* Search Employee by Name
-* Search Employee by Department
-* Filter Employees by Salary Range
-* Pagination and Sorting
+* View Employee List
+* Search Employees
+* Department-wise Search
+* Salary Filter
+* Pagination
+* Sorting
 * Dashboard Statistics
+* REST API Architecture
 * Responsive User Interface
 
-## Technologies Used
+---
+
+## 🛠️ Tech Stack
 
 ### Backend
 
 * Java 21
 * Spring Boot
+* Spring Security
 * Spring Data JPA
+* JWT Authentication
 * Maven
-
-### Database
-
-* MySQL
 
 ### Frontend
 
@@ -35,75 +49,90 @@ A Full-Stack Employee Management System built using Spring Boot, MySQL, HTML, CS
 * CSS3
 * JavaScript
 
-## Project Structure
+### Database
 
-employee-management-system
+* MySQL
 
-├── src/main/java
+### Tools
 
-│ ├── controller
+* Git
+* GitHub
+* Docker
+* Railway
 
-│ ├── service
+---
 
-│ ├── repository
+## 📂 Project Structure
 
-│ ├── entity
+```
+src
+ ├── controller
+ ├── service
+ ├── repository
+ ├── entity
+ ├── security
+ ├── config
+ ├── resources
+ │   ├── static
+ │   └── application.properties
+ └── EmployeeManagementSystemApplication.java
+```
 
-│ ├── exception
+---
 
-│ └── config
+## 🚀 Installation
 
-├── src/main/resources
+Clone the repository
 
-│ ├── static
+```
+git clone https://github.com/shantanu-farkade/employee-management-system.git
+```
 
-│ │ ├── index.html
+Move into the project
 
-│ │ ├── login.html
+```
+cd employee-management-system
+```
 
-│ │ ├── style.css
+Run the project
 
-│ │ ├── login.css
+```
+./mvnw spring-boot:run
+```
 
-│ │ ├── script.js
+---
 
-│ │ └── login.js
+## 📸 Screenshots
 
-│ └── application.properties
+Add screenshots here.
 
-└── pom.xml
+* Login Page
+* Dashboard
+* Add Employee
+* Employee List
+* Search
+* Update Employee
 
-## Database Configuration
+---
 
-Create a MySQL database: CREATE DATABASE employee_db;
-Update the database credentials in: src/main/resources/application.properties
+## Future Improvements
 
-## Run the Application
-### Clone Repository
-
-git clone <repository-url>
-
-### Open Project
-
-Import the project into VS Code or IntelliJ IDEA.
-
-### Run Spring Boot Application
-
-mvn spring-boot:run
-Application will start at: http://localhost:8081
-
-## Login Credentials
-
-Username: admin
-Password: admin123
-
-## Future Enhancements
-
-* JWT Authentication
 * Role-Based Access Control
+* Email Notifications
 * Employee Profile Images
-* Department Analytics Dashboard
-* Cloud Deployment
+* PDF Report Generation
+* Excel Export
+* AI-based Employee Analytics
 
-## Author
-Shantanu Farkade
+---
+
+## 👨‍💻 Developer
+
+**Shantanu Farkade**
+Software Engineering Student
+Java Backend Developer
+
+---
+
+## ⭐ If you like this project
+Give this repository a ⭐ on GitHub.
