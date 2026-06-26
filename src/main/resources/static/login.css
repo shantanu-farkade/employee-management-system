@@ -94,3 +94,35 @@ body {
     margin-top: 15px;
 }
 
+.demo-box {
+
+    margin-top: 25px;
+
+    background: #f8fafc;
+
+    border: 2px dashed #667eea;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    text-align: left;
+}
+
+.demo-box h3 {
+
+    color: #667eea;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.demo-box p {
+
+    color: #1f2937;
+
+    margin: 6px 0;
+
+    font-size: 15px;
+}
