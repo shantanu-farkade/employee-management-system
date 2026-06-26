@@ -106,12 +106,15 @@ Run the project
 
 Add screenshots here.
 
-* Login Page
-* Dashboard
-* Add Employee
-* Employee List
-* Search
-* Update Employee
+* <img width="1917" height="1018" alt="Login page" src="https://github.com/user-attachments/assets/edc53339-43ef-4b4a-8f34-41cd0b7e80eb" />
+
+*<img width="1917" height="1013" alt="Dashboard" src="https://github.com/user-attachments/assets/9c667e8d-4069-4170-93dd-760e7f7d1e75" />
+
+* <img width="1917" height="1013" alt="Add Employee" src="https://github.com/user-attachments/assets/6ad901f9-6337-4914-a271-c7fd5f8aac34" />
+
+* <img width="1917" height="1024" alt="Screenshot 2026-06-26 205024" src="https://github.com/user-attachments/assets/f8b693b0-6d45-4747-a9f2-d3e620cfc95f" />
+
+* <img width="1917" height="1016" alt="Dashboard2" src="https://github.com/user-attachments/assets/9b51a14b-3407-4846-b734-c8b95f96b71f" />
 
 ---
 
