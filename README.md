@@ -108,7 +108,8 @@ Add screenshots here.
 
 * <img width="1917" height="1018" alt="Login page" src="https://github.com/user-attachments/assets/edc53339-43ef-4b4a-8f34-41cd0b7e80eb" />
 
-*<img width="1917" height="1013" alt="Dashboard" src="https://github.com/user-attachments/assets/9c667e8d-4069-4170-93dd-760e7f7d1e75" />
+*<img width="1917" height="910" alt="Dashboard" src="https://github.com/user-attachments/assets/74cf30ea-0368-4607-8c6f-51098ab65a32" />
+
 
 * <img width="1917" height="1013" alt="Add Employee" src="https://github.com/user-attachments/assets/6ad901f9-6337-4914-a271-c7fd5f8aac34" />
 
