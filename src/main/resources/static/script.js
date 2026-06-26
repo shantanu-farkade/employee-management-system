@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8081/employees";
+const BASE_URL = "https://employee-management-system-production-dabb.up.railway.app/employees";
 
 /* ===========================
    LOGIN CHECK
